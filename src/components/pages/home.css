@@ -1,0 +1,120 @@
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+
+}
+.overlay{
+    display: block;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3e64ff;
+    opacity: .1;
+    z-index: -2;
+}
+
+#home_t1{
+    text-align: center;
+    color:#3e64ff;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: block;
+    /* margin-top: 100px;    */
+}
+.centerText{
+    margin-top: 100px;
+}
+.centerText h1{
+    font-size: 58px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Typing Text Animation Css */
+.animatedText{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.secText{
+    position: relative;
+    padding-left: 4px;
+    color: #3e64ff;
+    text-decoration: underline;
+}
+
+.secText::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    /* border-left: 3px solid grey; */
+    /* animation: animate 5s steps(12) 1s infinite; */
+    
+}
+
+@keyframes animate {
+    40%,70%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
+
+.Home_btn{
+    display:flex;
+    width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+.Home_btn button{
+    position: relative;
+   width: 80px;
+   height: 80px;
+   background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+.Home_btn button::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    background-color: #edf0ff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+/* SVG Home Page Icon Arrow  */
+@keyframes arrowIcon{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+#svg_arrow{
+        animation: arrowIcon 1.5s infinite  ;
+}
