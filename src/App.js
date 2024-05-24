@@ -1,24 +1,15 @@
 import './App.css';
 
-import About from './components/pages/About';
-import Home from './components/pages/Home';
+import About from './pages/About';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
-  let animateList = document.querySelectorAll(".hidden");
-  const observe = new IntersectionObserver((elements)=>{
-    elements.forEach((element)=>{
-            if(element.isIntersecting){
-              console.log(element);
-              element.target.classList.add('slide');
-            }
-    })
-  })
-  
-  animateList.forEach((el)=>observe.observe(el));
   return (
     <div>
       <Home/>
       <About/>
+      <Projects/>
     </div>
   );
 }

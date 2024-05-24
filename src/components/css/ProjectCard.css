@@ -1,0 +1,40 @@
+.Child_Card{
+    position: relative;
+    margin: 2rem;
+    width: 18rem;
+    height: 20rem;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Child_Card_Img{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3e65ff;
+    opacity: 0;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+
+}
+.Child_Card_Img:hover{
+    opacity: 1;
+    transform:translate(10px,-10px);
+}
+.Child_Card_Img a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: .2rem;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+.Child_Card_Img a:hover{
+    color: #edf0ff;
+}

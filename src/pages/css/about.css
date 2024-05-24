@@ -26,7 +26,7 @@ width: 50%;
  .imgDiv{
     width: 80%;
     height: 600px;
-    background: url("../pages/IMG_2627.JPG");
+    background: url("../../img/profilePic.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
